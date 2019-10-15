@@ -1,7 +1,5 @@
 package piscine
 
-import piscine (..)
-
 func IsNegative(nb int) rune {
 
 	if nb >= 0 {
