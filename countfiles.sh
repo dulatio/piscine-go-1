@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "4"
+$ ls -l /home/daygeek/test | wc -l
