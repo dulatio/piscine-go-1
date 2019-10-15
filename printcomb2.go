@@ -9,11 +9,11 @@ func PrintComb2() {
 			var b int = i % 10
 			var c int = j / 10
 			var d int = j % 10
-			z01.PrintRune(a)
-			z01.PrintRune(b)
+			z01.PrintRune(rune(a))
+			z01.PrintRune(rune(b))
 			z01.PrintRune(' ')
-			z01.PrintRune(c)
-			z01.PrintRune(d)
+			z01.PrintRune(rune(c))
+			z01.PrintRune(rune(d))
 			z01.PrintRune(',')
 			z01.PrintRune(' ')
 		}
