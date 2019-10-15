@@ -9,6 +9,6 @@ func main() {
 	// convert rune slice to string
 	var alphabet = string(letter)
 
-	fmt.Printf("%v\n", alphabet)
+	fmt.Printf("%v\n\n", alphabet)
 
 }
