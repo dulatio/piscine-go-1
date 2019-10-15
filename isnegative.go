@@ -1,6 +1,8 @@
 package main
+package _/jail_test
 
 import "github.com/01-edu/z01"
+import "./student"
 
 func IsNegative(nb int) rune {
 
