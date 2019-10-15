@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -l . | grep ^- | wc -l
+find . -type f -printf "%T@ %p\n" | sort -nr | cut -d\  -f2-
