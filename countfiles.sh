@@ -1,2 +1,2 @@
 #!/bin/bash
-$ ls -l /home/daygeek/test | wc -l
+ls -l . | wc -l
