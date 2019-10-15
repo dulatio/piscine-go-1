@@ -1,15 +1,18 @@
 package main
 
-import "fmt"
+import "github.com/01-edu/z01"
 
 func main() {
 
-	var letter = []rune{'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'}
-
-	// convert rune slice to string
-	var alphabet = string(letter)
-
-	fmt.Printf("%v\n", alphabet)
-
+	var alphabet string = "abcdefghijklmnopqrstuvwxyz"
 	
+	for i:=0; i<=25; i++ {
+
+		z01.PrintRune(rune(alphabet[i]))
+
+	}
+	
+	z01.PrintRune('\n')
+
+
 }
