@@ -12,13 +12,13 @@ func Atoi(s string) int {
 			if sign == true {
 				return 0
 			}
-			sign := true
+			sign = true
 		} else if answer == 0 && str[i] == '-' {
 			if sign == true {
 				return 0
 			}
-			sign := true
-			positive := false
+			sign = true
+			positive = false
 		} else if str[i] < '0' || str[i] > '9' {
 			return 0
 		} else {
