@@ -1,29 +1,5 @@
 package piscine
 
-func chartoint(c rune) int {
-	if c == '0' {
-		return 0
-	} else if c == '1' {
-		return 1
-	} else if c == '2' {
-		return 2
-	} else if c == '3' {
-		return 3
-	} else if c == '4' {
-		return 4
-	} else if c == '5' {
-		return 5
-	} else if c == '6' {
-		return 6
-	} else if c == '7' {
-		return 7
-	} else if c == '8' {
-		return 8
-	} else {
-		return 9
-	}
-}
-
 func BasicAtoi2(s string) int {
 	str := []rune(s)
 	answer := 0
