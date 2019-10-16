@@ -2,20 +2,35 @@ package piscine
 
 import "github.com/01-edu/z01"
 
+func output (i, j, k, l rune) {
+	z01.PrintRune(i)
+	z01.PrintRune(j)
+	z01.PrintRune(' ')
+	z01.PrintRune(k)
+	z01.PrintRune(l)
+	if i == '9' && j == '8' && k == '9' && l == '9' {
+		z01.PrintRune(';')
+		z01.PrintRune('\n')
+	} else {
+		z01.PrintRune(',')
+		z01.PrintRune(' ')
+	}
+}
+
 func PrintComb2() {
-	for i := 0; i <= 98; i++ {
-		for j := i + 1; j <= 99; j++ {
-			var a int = i / 10
-			var b int = i % 10
-			var c int = j / 10
-			var d int = j % 10
-			z01.PrintRune(rune(a))
-			z01.PrintRune(rune(b))
-			z01.PrintRune(' ')
-			z01.PrintRune(rune(c))
-			z01.PrintRune(rune(d))
-			z01.PrintRune(',')
-			z01.PrintRune(' ')
+	var a rune = '1';
+	for i := '0'; i <= '9'; i++ {
+		for j := '0'; j <= '8'; j++ {
+			for k := '0'; k <= '9'; k++ {
+				for l := a - j ; l <= '9'; l++ {
+					if k > i {
+						output(i, j, k, l)
+					} else if k == i && l > j {
+						output(i, j, k, l)
+
+					}
+				}
+			}
 		}
 	}
 	z01.PrintRune('\n')
