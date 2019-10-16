@@ -9,7 +9,7 @@ func PrintNbr(n int) {
 			PrintNbr(n / -10)
 		}
 		d := '0'
-		for i := 0; i < -(n % 10); i++{
+		for i := 0; i < -(n % 10); i++ {
 			d++
 		}
 		z01.PrintRune(d)
