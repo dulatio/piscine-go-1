@@ -7,5 +7,4 @@ func PrintStr(str string) {
 	for _, letter := range strc {
 		z01.PrintRune(letter)
 	}
-	z01.PrintRune('\n')
 }
