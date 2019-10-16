@@ -2,35 +2,35 @@ package piscine
 
 import "github.com/01-edu/z01"
 
-func output(a int) rune {
+func inttorune(a int) rune {
 	if a == 0 {
 		return '1'
 	}
-	if a == 1 {
+	else if a == 1 {
 		return '1'
 	}
-	if a == 2 {
+	else if a == 2 {
 		return '2'
 	}
-	if a == 3 {
+	else if a == 3 {
 		return '3'
 	}
-	if a == 4 {
+	else if a == 4 {
 		return '4'
 	}
-	if a == 5 {
+	else if a == 5 {
 		return '5'
 	}
-	if a == 6 {
+	else if a == 6 {
 		return '6'
 	}
-	if a == 7 {
+	else if a == 7 {
 		return '7'
 	}
-	if a == 8 {
+	else if a == 8 {
 		return '8'
 	}
-	if a == 9 {
+	else a == 9 {
 		return '9'
 	}
 }
@@ -51,6 +51,6 @@ func PrintNbr(n int) {
 		for j := 1; j < i; j++ {
 			ten = ten * 10
 		}
-		z01.PrintRune(output((n / ten) % 10))
+		z01.PrintRune(inttorune((n / ten) % 10))
 	}
 }
