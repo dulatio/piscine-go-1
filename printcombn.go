@@ -219,13 +219,31 @@ func PrintComb09() {
 }
 
 func PrintCombN(n int) {
-	if n == 1 PrintComb01();
-	if n == 2 PrintComb02();
-	if n == 3 PrintComb03();
-	if n == 4 PrintComb04();
-	if n == 5 PrintComb05();
-	if n == 6 PrintComb06();
-	if n == 7 PrintComb07();
-	if n == 8 PrintComb08();
-	if n == 9 PrintComb09();
+	if n == 1 {
+		PrintComb01()
+	}
+	if n == 2 {
+		PrintComb02()
+	}
+	if n == 3 {
+		PrintComb03()
+	}
+	if n == 4 {
+		PrintComb04()
+	}
+	if n == 5 {
+		PrintComb05()
+	}
+	if n == 6 {
+		PrintComb06()
+	}
+	if n == 7 {
+		PrintComb07()
+	}
+	if n == 8 {
+		PrintComb08()
+	}
+	if n == 9 {
+		PrintComb09()
+	}
 }
