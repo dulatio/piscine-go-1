@@ -41,8 +41,8 @@ func PrintNbr(n int) {
 	if n < 0 {
 		z01.PrintRune('-')
 		n = n * (-1)
-		}
-	for n / 10 > 0 {
+	}
+	for n/10 > 0 {
 		c++
 		n = n / 10
 	}
