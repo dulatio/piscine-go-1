@@ -5,32 +5,23 @@ import "github.com/01-edu/z01"
 func inttorune(a int) rune {
 	if a == 0 {
 		return '1'
-	}
-	else if a == 1 {
+	} else if a == 1 {
 		return '1'
-	}
-	else if a == 2 {
+	} else if a == 2 {
 		return '2'
-	}
-	else if a == 3 {
+	} else if a == 3 {
 		return '3'
-	}
-	else if a == 4 {
+	} else if a == 4 {
 		return '4'
-	}
-	else if a == 5 {
+	} else if a == 5 {
 		return '5'
-	}
-	else if a == 6 {
+	} else if a == 6 {
 		return '6'
-	}
-	else if a == 7 {
+	} else if a == 7 {
 		return '7'
-	}
-	else if a == 8 {
+	} else if a == 8 {
 		return '8'
-	}
-	else a == 9 {
+	} else {
 		return '9'
 	}
 }
