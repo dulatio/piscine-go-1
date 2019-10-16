@@ -27,7 +27,7 @@ func chartoint(c rune) int {
 func BasicAtoi(s string) int {
 	str := []rune(s)
 	answer := 0
-	for i := 0; i <= Len(s); i++ {
+	for i range str {
 		if answer == 0 && str[i] == '0' {
 			answer = 0
 		} else {
