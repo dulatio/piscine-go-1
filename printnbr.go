@@ -28,7 +28,6 @@ func inttorune(a int) rune {
 
 func PrintNbr(n int) {
 	var c int = 1
-	var num int
 	if n < 0 {
 		z01.PrintRune('-')
 		n = n * (-1)
