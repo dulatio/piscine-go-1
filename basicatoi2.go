@@ -6,7 +6,7 @@ func BasicAtoi2(s string) int {
 	for i := range str {
 		if answer == 0 && str[i] == '0' {
 			answer = 0
-		} else if str[i] < '0' && str[i] > '9' {
+		} else if str[i] < '0' || str[i] > '9' {
 			return 0
 		} else {
 			ten := 1
