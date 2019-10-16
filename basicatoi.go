@@ -8,10 +8,10 @@ func BasicAtoi(s string) int {
 			answer = 0
 		} else {
 			ten := 1
-			for j := i ; j < Len(s); j++ {
+			for j := i; j < Len(s); j++ {
 				ten = ten * 10
 			}
-			answer = answer + (int(str[i]) - 48) * ten
+			answer = answer + (int(str[i])-48)*ten
 		}
 	}
 	return answer
