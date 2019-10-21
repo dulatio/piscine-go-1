@@ -23,7 +23,7 @@ func PrintNbrInOrder(n int) {
 		for j := i; j > 1; j-- {
 			ten = ten * 10
 		}
-		array[i] = (n/ten)%10;
+		array[i] = (n / ten) % 10
 	}
 
 	SortIntegerTable(array[:])
