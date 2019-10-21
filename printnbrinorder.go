@@ -19,7 +19,7 @@ func PrintNbrInOrder(n int) {
 			for j := i; j > 1; j-- {
 				ten = ten * 10
 			}
-			z01.PrintRune(rune((n / ten) % 10 + 48))
+			z01.PrintRune(rune((n/ten)%10 + 48))
 		}
 	}
 }
