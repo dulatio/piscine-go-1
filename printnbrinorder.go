@@ -11,15 +11,24 @@ func size(n int) int {
 }
 
 func PrintNbrInOrder(n int) {
+
 	if n == 0 {
 		z01.PrintRune('0')
-	} else {
-		for i := 1; i <= size(n); i++ {
-			ten := 1
-			for j := i; j > 1; j-- {
-				ten = ten * 10
-			}
-			z01.PrintRune(rune((n/ten)%10 + 48))
+	}
+
+	var array [20]int
+
+	for i := 0; i < size(n); i++ {
+		ten := 1
+		for j := i; j > 1; j-- {
+			ten = ten * 10
 		}
+		array[i] = (n/ten)%10;
+	}
+
+	SortIntegerTable(array[:])
+
+	for i := 0; i < size(n); i++ {
+		z01.PrintRune(rune(i + 49))
 	}
 }
