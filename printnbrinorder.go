@@ -19,7 +19,7 @@ func PrintNbrInOrder(n int) {
 	var array [19]int
 
 	for i := 0; i <= 18; i++ {
-		array[i] = 20;
+		array[i] = 20
 	}
 
 	for i := 0; i < size(n); i++ {
