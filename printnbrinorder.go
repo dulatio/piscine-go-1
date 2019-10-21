@@ -16,11 +16,15 @@ func PrintNbrInOrder(n int) {
 		z01.PrintRune('0')
 	}
 
-	var array [20]int
+	var array [19]int
+
+	for i := 0; i <= 18; i++ {
+		array[i] = 20;
+	}
 
 	for i := 0; i < size(n); i++ {
 		ten := 1
-		for j := i; j > 1; j-- {
+		for j := i; j > 0; j-- {
 			ten = ten * 10
 		}
 		array[i] = (n / ten) % 10
@@ -29,6 +33,6 @@ func PrintNbrInOrder(n int) {
 	SortIntegerTable(array[:])
 
 	for i := 0; i < size(n); i++ {
-		z01.PrintRune(rune(i + 49))
+		z01.PrintRune(rune(array[i] + 48))
 	}
 }
