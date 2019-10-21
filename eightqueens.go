@@ -13,7 +13,7 @@ func threatened(queen_nb int, row int) bool {
 	return false
 }
 
-func EightQueens(current int) {
+func solution(current int) {
 	if current == 8 {
 		for i := 0; i <= 7; i++ {
 			z01.PrintRune(rune(array[i] + 49))
@@ -23,8 +23,12 @@ func EightQueens(current int) {
 		for i := 0; i <= 7; i++ {
 			if threatened(current, i) == false {
 				array[current] = i
-				EightQueens(current + 1)
+				solution(current + 1)
 			}
 		}
 	}
+}
+
+func EightQueens() {
+	solution(0)
 }
