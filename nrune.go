@@ -10,7 +10,7 @@ func RuneArrayLength(array []rune) int {
 
 func NRune(s string, n int) rune {
 	str := []rune(s)
-	if n > RuneArrayLength(str) || n < 0 {
+	if n > RuneArrayLength(str) || n < 1 {
 		return 0
 	}
 	return str[n-1]
