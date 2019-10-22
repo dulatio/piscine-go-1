@@ -2,7 +2,7 @@ package piscine
 
 func RuneArrayLength(array []rune) int {
 	length := 0
-	for range table {
+	for range array {
 		length++
 	}
 	return length
