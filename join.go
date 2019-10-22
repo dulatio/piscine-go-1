@@ -2,10 +2,15 @@ package piscine
 
 func Join(strs []string, sep string) string {
 	result := ""
-	for _, word := range strs {
-		result = result + word + sep
+	var index int
+	for i := range strs {
+		index = i
 	}
-	array := []rune(result)
-	array[RuneArrayLength(array)-1] = 127
-	return string(array)
+	for i, word := range strs {
+		result = result + word
+		if i != index {
+			result = result + sep
+		}
+	}
+	return result
 }
